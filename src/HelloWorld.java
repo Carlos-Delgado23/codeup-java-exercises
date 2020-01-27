@@ -4,6 +4,8 @@ public class HelloWorld {
 //        System.out.print("Hello, ");
 //        System.out.print("World!");
 
+
+//        SYNTAX, TYPES, AND VARIABLES       //
         int myFavoriteNumber = 23;
         System.out.println(myFavoriteNumber);
 
