@@ -29,12 +29,22 @@ public class ConsoleExercises {
 //        System.out.println("You entered: --> \"" + userSentence + "\"");
 
 //        STEP FIVE      //
-        System.out.print("Enter the classrooms dimensions: ");
-        String userMes = scanner.next();
-        parseInt("");
-        System.out.println();
-    }
+//        System.out.print("Enter width: ");
+//        String width = scanner.nextLine();
+//        System.out.print("Enter length: ");
+//        String length = scanner.nextLine();
+//        float area = Float.parseFloat(length) * Float.parseFloat(width);
+//        float perimeter = (Float.parseFloat(length) * 2) + (Float.parseFloat(width) * 2);
+//        System.out.println("Your area is: -->" + area);
+//        System.out.println("Your perimeter is: -->" + perimeter);
 
-    private static void parseInt(String s) {
+        scanner.useDelimiter(" "); // delimiter could be anything that and is used instead of having to tap enter to
+        // go to the following line.
+        System.out.print("\nHey! Enter width: ");
+        double width = scanner.nextFloat();
+        System.out.print("Enter length: ");
+        double length = scanner.nextFloat();
+        System.out.printf("The dimensions are %f by %f. The perimeter is %f and the area is %f.\n", length, width,
+                2*(length+width), length*width);
     }
 }
