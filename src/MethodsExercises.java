@@ -28,7 +28,7 @@ public class MethodsExercises {
 //            confirm = scanner.next();
 //        }
 
-        dice();
+//        dice();
     }
 
 
