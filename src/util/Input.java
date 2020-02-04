@@ -39,7 +39,7 @@ public class Input {
        while (min > userNum || max < userNum){
            userNum = getInt();
        }
-       System.out.printf("Great your number is within %d and %d \n", min, max);
+//       System.out.printf("Great your number is within %d and %d \n", min, max);
        return userNum;
     }
 
