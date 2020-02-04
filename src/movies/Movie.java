@@ -9,6 +9,7 @@ public class Movie {
 ////        return getMovie();
 //    }
 
+    public Movie(){}
     public Movie(String movieName, String movieCategory){
         name = movieName;
         category = movieCategory;
