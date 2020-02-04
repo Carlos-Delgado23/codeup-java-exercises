@@ -16,10 +16,10 @@ public class Movie {
     }
 
     public String getName(){
-        return name;
+        return this.name;
     }
     public String getCategory(){
-        return category;
+        return this.category;
     }
 
 
