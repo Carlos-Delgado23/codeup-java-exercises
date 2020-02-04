@@ -8,7 +8,15 @@ import java.util.Scanner;
 
 public class MoviesApplication {
     public static void main(String[] args){
-        System.out.println(menuChoice());
+        Input cont = new Input();
+        boolean yesNoCont;
+
+
+        do {
+            System.out.println(menuChoice());
+            yesNoCont = cont.yesNo("Do you wish to continue? [yes/no]");
+        } while(yesNoCont);
+
     }
 
 
