@@ -19,7 +19,6 @@ public class Student {
 
     // adds the given grade to the grades property
     public void addGrade(int grade){
-        //may need identifier to add to specific student----------//
         grades.add(grade);
     }
     // returns the average of the students grades
