@@ -43,9 +43,7 @@ public class Input {
        return userNum;
     }
 
-    public int getInt(){
-       return this.scanner.nextInt();
-    }
+
 
     public double getDouble(String prompt, double min, double max){
        System.out.println(prompt);
@@ -57,7 +55,29 @@ public class Input {
        return userNumber;
     }
 
+
     public double getDouble(){
        return this.scanner.nextDouble();
     }
+    public int getInt() { return this.scanner.nextInt(); }
+
+
+    public int getInt(String prompt) {
+        int answer = 0;
+        do {
+            System.out.println(prompt);
+
+            String response = this.scanner.nextLine();
+            try{
+                answer = Integer.valueOf(response);
+            } catch (NumberFormatException nfe){
+                System.out.println("Error");
+            }
+        } while (answer == 0);
+
+        return answer;
+    }
+
+
+
 }

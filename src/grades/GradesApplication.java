@@ -6,14 +6,10 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class GradesApplication {
-    public GradesApplication(){
-        // default constructor
-    }
 
 //  MAIN
     public static void main(String[] args) {
         HashMap<String, Student> students = new HashMap<>();
-
 //  STUDENTS
         Student john = new Student("John");
         john.setUsername("robotron3000");
@@ -68,7 +64,6 @@ public class GradesApplication {
             } else {
                 System.out.printf("Sorry, no student found with the GitHub username of \"%s\".\n\n", studentRequest);
             }
-
             yesNoCont = cont.yesNo("Would you like to see another student or view more options? \t ( YES | OPTIONS )");
         } while(yesNoCont);
 
@@ -104,7 +99,7 @@ public class GradesApplication {
             }
             System.out.printf("%.2f\n", overallGrade/totalGrades);
         } else if(optionsSelected == 3){
-            System.out.println("\tname | github_uesrname | average");
+            System.out.println("\tname | github_username | average");
             System.out.println("\t--------------------------------");
             for(Student student : students.values()){
                 System.out.printf("\t%s | %s | %.2f\n\n", student.getName(), student.getUsername(),
