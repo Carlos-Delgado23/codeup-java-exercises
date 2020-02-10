@@ -34,7 +34,7 @@ public class Input {
     }
 
     public int getInt(String prompt, int min, int max){
-       System.out.println(prompt);
+//       System.out.println(prompt);
        int userNum = getInt();
        while (min > userNum || max < userNum){
            userNum = getInt();
@@ -46,7 +46,7 @@ public class Input {
 
 
     public double getDouble(String prompt, double min, double max){
-       System.out.println(prompt);
+//       System.out.println(prompt);
        double userNumber = getDouble();
        while(min > userNumber || max < userNumber){
            userNumber = getDouble();

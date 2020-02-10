@@ -1,6 +1,7 @@
 package Practice;
 
 
+import java.util.ArrayList;
 
 public class pod {
         public static boolean sameAscii(String a, String b) {
@@ -29,6 +30,34 @@ public class pod {
         int y = Integer.parseInt(temp[2]);
 
         return (d*m==y%1000||d*m==y%100||d*m==y%10);
+    }
+
+    public static String replaceThe(String str) {
+
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+
+            if (ch == 'a' || ch == 'e' || ch == 'i'
+                    || ch == 'o' || ch == 'u') {
+                str.replace("the", "a");
+            } else if ((ch >= 'a' && ch <= 'z')) {
+                str.replace("the", "an");
+            }
+        }
+        return "";
+    }
+
+    public static ArrayList<String> stringOutput (){
+        ArrayList<String> words = new ArrayList<>();
+        words.add("yadi");
+        words.add("yada");
+        words.add("shinger");
+        words.add("shnagen");
+        return words;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(stringOutput());
     }
 
 }
