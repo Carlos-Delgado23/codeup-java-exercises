@@ -30,7 +30,6 @@ public class TestPhoneBook {
             }
         }
         try {
-//            Files.writeString(phoneBookFile, "", StandardOpenOption.TRUNCATE_EXISTING);
             Files.writeString(phoneBookFile, "First Name, Last Name, Street Address, Secondary Street Address (This " +
                     "may be blank), City, State, Country code, Zip Code, Cell Phone, LandLine\n", StandardOpenOption.APPEND);
         } catch (IOException ioe){
