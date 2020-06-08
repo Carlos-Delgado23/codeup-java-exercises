@@ -12,7 +12,7 @@ public class MethodsExercises {
 //       System.out.println(divide(3,5));
 //       System.out.println(modulus(5, 3));
 
-//       System.out.print(getInteger(1, 10));
+       getInteger(1, 10);
 //        String intConfirm = "y";
 //        while(intConfirm.equalsIgnoreCase("y")){
 //            System.out.println(getInteger(1, 10));
@@ -69,15 +69,19 @@ public class MethodsExercises {
         int userInput = scanner.nextInt();
 
             if (userInput > max){
-                System.out.println("Your number is greater than max: ");
-                return userInput;
+                System.out.println("Your number is greater than max");
+//                System.out.println(userInput);
+                getInteger(min, max);
             } else if (userInput < min) {
-                System.out.println("Your number is less than min: ");
-                return userInput;
+                System.out.println("Your number is less than min");
+//                System.out.println(userInput);
+                getInteger(min, max);
             } else {
-                System.out.println("Your number is in range: ");
-                return userInput;
+                System.out.println("Your number is in range");
+//                System.out.println(userInput);
+//                return userInput;
             }
+        return userInput;
     }
 
 //    STEP THREE OF EXERCISES      //
