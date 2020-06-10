@@ -30,7 +30,7 @@ public class Person {
     }
 
     public void sayHello(){
-        System.out.printf("Hello, my name is ");
+        System.out.print("Hello, my name is ");
     }
 
 }

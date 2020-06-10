@@ -12,7 +12,7 @@ public class MethodsExercises {
 //       System.out.println(divide(3,5));
 //       System.out.println(modulus(5, 3));
 
-       getInteger(1, 10);
+//       getInteger(1, 10);
 //        String intConfirm = "y";
 //        while(intConfirm.equalsIgnoreCase("y")){
 //            System.out.println(getInteger(1, 10));
@@ -20,7 +20,7 @@ public class MethodsExercises {
 //            intConfirm = scanner.next();
 //        }
 
-//       System.out.print(factorial(1, 10));
+       System.out.print(factorial(1, 10));
 //        String confirm = "y";
 //        while(confirm.equalsIgnoreCase("y")){
 //            System.out.println(factorial(1, 10));
