@@ -12,6 +12,7 @@ public class ServerNameGenerator {
     public static String randomPick (String[] adjs, String[] noun) {
         String name = adjs[new Random().nextInt(adjs.length)];
         String last = noun[new Random().nextInt(noun.length)];
+
         return name + "-" +  last;
     }
 
